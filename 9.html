@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="jquery.js">
+  </script>
+  <style>
+  select{
+    padding:10px;
+    margin-top: 100px;
+    margin-left: 500px;
+  }
+
+    div{
+    margin-top: 20px;
+    margin-left: 520px; 
+  }
+</style>
+
+</head>
+<body>
+<select>
+  <option>  </option>
+  <option>F.C. Barcelona</option>
+  <option>Juventus</option>
+  <option>Real Madrid</option>
+  <option>Chelsea</option>
+  <option>Manchester United</option>
+  <option>Liverpool</option>
+  <option>PSG</option>
+</select>
+<div></div>
+
+<script>
+$("select").change(function(){
+    var a="";
+    $( "select option:selected" ).each(function() {
+      a += $(this).text() + " ";
+    });
+    $( "div" ).html(a);
+  })
+  .change();
+</script>
+ 
+</body>
+</html>

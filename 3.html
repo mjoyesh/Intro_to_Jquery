@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<style type="text/css">
+		.btn{
+			font-size: 50px;
+			margin-top: 20%;
+		}
+
+		.wrapper{
+			text-align: center;
+		} 
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<button class="btn" value="Brand-new">Jquery attribute Ends With Selector</button>
+	</div>
+	<script type="text/javascript">
+		$("[value$='-new']").css('background-color','yellow');
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<p class = "dropdown"> Hover your mouse here! </p>
+  <ul id = "sub_droppdown">
+  <li>  F.C. Barcelona</li>
+  <li>  Juventus</li>
+  <li>  Real Madrid</li>
+  <li>  PSG</li>
+  </ul>
+
+ <script type="text/javascript">
+     $(function(){
+$("#sub_droppdown").hide();
+$(".dropdown").hover(function(){
+$("#sub_droppdown").show();},
+function(){
+$("#sub_droppdown").hide();
+});
+     });
+ </script>
+</body>
+</html>

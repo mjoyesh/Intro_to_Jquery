@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js">
+	</script>
+</head>
+<body>
+		<div>
+			<p><button id="main">Click Here</button></p>
+		</div>
+		<script>
+				$(document).ready(function(){
+				var i = 0;
+				$("p").on('click','button', function(){
+					$("p").append("<button id='button"+i+"'> button " +i+" from "+ this.id + " </button>");
+					i++;
+				})
+			})	;
+		</script>
+</body>
+</html>

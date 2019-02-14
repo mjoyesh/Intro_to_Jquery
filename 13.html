@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js">
+  </script>
+  <style>
+  div
+  {
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+	<div style="height:50px;border:2px solid red;"> </div>
+	<div style="height:60px;border:2px solid blue;"> </div>
+	<div style="height:30px;border:2px solid green;"> </div>
+	<div style="height:70px;border:2px solid violet;"> </div>
+	<script>
+		$(document).ready(function(){
+			var maxheight= 0;
+			$("body").children().each(function(){
+			var h = $(this).height();
+			if(h>=maxheight)
+			{
+				maxheight=h;
+			}
+			});
+			alert("The maximum height= " + maxheight);
+		})
+	
+	</script>
+</body>
+</html>

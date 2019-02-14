@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+
+<script src="jquery.js"></script>
+
+
+</head>
+<body>
+	<div id="test">
+		<p>This is Jquery addClass() method..</p>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			if(document.readyState==='complete'){
+				  $("#test").addClass('load');
+			}
+		});
+</script>
+</body>
+</html>

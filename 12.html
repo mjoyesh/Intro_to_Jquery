@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="jquery.js"></script>
+  <style>
+  div
+  {
+  	font-size: 30px;
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+	<div class="parent">
+		<p> This is Parent Div..</p>	
+		<div class="child"><p>This is Child Div..</p></div>
+	</div>
+	<script>
+    $(function(){
+		$(".parent").on("click", function(){
+   		 alert("The parent div paragraph was clicked.");
+		});
+		$(".child").on("click", function(e){
+		 alert("The child div paragraph was clicked.");
+		e.stopPropagation(); 
+		});
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		form{
+			text-align: center;
+			margin-top: 10%;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="text" placeholder="Enter any text">
+		<input type="submit" name="submit" value="Submit">
+	</form>
+		
+	<script>
+		$("input[type='submit']").attr("disabled", true);
+	</script>
+</body>
+</html>

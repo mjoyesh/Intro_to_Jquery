@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="jquery.js"></script>
+  <style>
+  div
+  {
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+<script>
+$.ajax({
+method:'GET',
+url:'https://jsonplaceholder.typicode.com/todos/1',
+success: function(result) {
+  console.log(JSON.stringify(result))
+}
+})
+</script>
+</body>
